@@ -108,11 +108,14 @@ const Food = () => {
             key={index}
             className='border shadow-lg rounded-lg hover:scale-105 duration-300'
           >
-            <img
-              src={item.image}
-              alt={item.name}
-              className='w-full h-[200px] object-cover rounded-t-lg'
-            />
+            <picture>
+              <img
+                src={item.image}
+                alt={item.name}
+                className='w-full h-[200px] object-cover rounded-t-lg'
+              />
+            </picture>
+
             <div className='flex justify-between px-2 py-4'>
               <p className='font-bold'>{item.name}</p>
               <p>
