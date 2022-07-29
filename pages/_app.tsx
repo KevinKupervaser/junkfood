@@ -1,8 +1,15 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import "../styles/globals.css";
+import type { AppProps } from "next/app";
+import { UIProvider, useUI } from "../store/Context";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  // const ui = useUI();
+  // console.log(ui);
+  return (
+    <UIProvider>
+      <Component {...pageProps} />
+    </UIProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;
