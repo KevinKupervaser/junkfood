@@ -29,10 +29,7 @@ const Food = () => {
         Top Rated Menu Items
       </h1>
 
-      {/* Filter Row */}
       <div className='flex flex-col lg:flex-row justify-between'>
-        {/* Filter Type */}
-
         <div>
           <p className='font-bold text-gray-700'>Filter Type</p>
           <div className='flex justify-between flex-wrap'>
@@ -69,7 +66,6 @@ const Food = () => {
           </div>
         </div>
 
-        {/* Filter Price */}
         <div>
           <p className='font-bold text-gray-700'>Filter Price</p>
           <div className='flex justify-between max-w-[390px] w-full'>
@@ -101,7 +97,6 @@ const Food = () => {
         </div>
       </div>
 
-      {/* Display Foods */}
       <div className='grid grid-cols-2 lg:grid-cols-4 gap-6 pt-4'>
         {foods.map((item, index) => (
           <div
